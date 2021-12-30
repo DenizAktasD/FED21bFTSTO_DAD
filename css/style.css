@@ -1,0 +1,20 @@
+/* comment */
+body {
+    background-color: #012a41;
+  }
+  
+  h1 {
+    color: #6ec0e9;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  p {
+    color: #dbe7ec;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+
+}
