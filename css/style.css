@@ -22,8 +22,14 @@
 * {
     box-sizing: border-box;
   }
+
+
+  header,
+  footer{background-color: #62A8B2;}
   
-.header {
+header {
+  display: flex;
+  flex-flow: nowrap;
   float: left;
   width: 100%;
   height: 120px;
@@ -81,7 +87,7 @@ li a:active {
   background-color: blanchedalmond;
 }
   
-.footer {
+footer {
   width: 100%;
   height: 40px;
   padding: 5px;
