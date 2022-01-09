@@ -1,13 +1,17 @@
 /*body {
     background-color: #010911;
-  } */
-
-
-
-body {
+  } 
+  
+  body {
 	background: url(../img/12_col.gif) center top repeat-y;
 	background-size: 100%;
 }
+
+*/
+
+
+
+
 
 /*Desktop first*/
 
@@ -19,58 +23,81 @@ body {
     box-sizing: border-box;
   }
   
-  .header {
-    float: left;
-    width: 100%;
-    height: 120px;
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    align-items: stretch;
+.header {
+  float: left;
+  width: 100%;
+  height: 120px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  align-items: stretch;
   }
 
 #logo{
-    margin: 10px;
-    position: relative;
-    float: left;
+  margin: 10px;
+  position: relative;
+  float: left;
 }
 
 #menuarea{
-    margin: 20px;
-    position: relative;
-    float: right;
+  margin: 20px;
+  position: relative;
+  float: right;
 }
 
 .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
   }
   
-  li {
-    float: left;
+li {
+  float: left;
   }
   
-  li a {
-    display: block;
-    color: white;
-    font-family: Raleway;
-    font-weight: 500;
-    font-size: 13px;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
+li a {
+  display: block;
+  color: white;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
   }
   
-  li a:hover {
-    color: #C6E0D7;
+li a:hover {
+  color: #C6E0D7;
   }
 
-  li a:active {
-    color: #62A8B2;
+li a:active {
+  color: #62A8B2;
   }
+
+.box{
+  height: 1060px;
+  background-color: blanchedalmond;
+}
+  
+.footer {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  position: sticky;
+  bottom: 0;
+  align-content: center;
+}
+
+.footertext{
+  float: center;
+  color: white;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+}
 /*
 #maincontainer{
     
