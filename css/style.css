@@ -1,6 +1,8 @@
 
 /*Desktop first*/
 
+
+
 * {
     box-sizing: border-box;
   }
@@ -13,8 +15,8 @@ header {
   display: flex;
   float: left;
   width: 100%;
-  height: 120px;
-  padding: 20px;
+  height: 110px;
+  padding: px;
   position: sticky;
   top: 0;
   align-items: stretch;
@@ -42,19 +44,17 @@ header {
   overflow: hidden;
   background-color: none;
   }
-  
-li {
-  float: left;
-  }
+
   
 li a {
   display: flex;
   flex-wrap: nowrap;
+  float: left;
   color: white;
   font-family: Roboto;
   letter-spacing: 0.05em;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   padding: 15px;
   margin-left: 10px;
@@ -62,18 +62,19 @@ li a {
   }
   
 li a:hover {
-  color: #C6E0D7;
+  color: #FFECCD;
   }
 
-li a:active {
-  color: #FB5357;
-  }
+
 
 .grid-container {
   display: grid;
   grid-template-columns: 25% 75%;
   padding: 1px;
 }
+
+
+
 .grid-item1{
   display: flex;
   flex-wrap: wrap;
@@ -117,7 +118,7 @@ li a:active {
   display: flex;
   flex-wrap: wrap;
   align-content:flex-start;
-  background-color: #e0e2e4;
+  background-color: #cccccc;
   height: auto;
   padding: 50px;
   font-size: 30px;
@@ -127,7 +128,7 @@ li a:active {
   display: flex;
   flex-wrap: wrap;
   align-content:flex-start;
-  background-color: #eeeff0;
+  background-color: #ffffff;
   height: auto;
   width: 100%;
   padding: 50px;
@@ -195,6 +196,7 @@ li a:active {
   height: 100px;
   width: 100px;
   justify-content: start;
+  margin-bottom: 30px;
 }
 
 .chaptertext{
@@ -325,4 +327,149 @@ input[type=submit]:hover {
 
 
 
+/*Breakpoint*/
+@media screen and (max-width:880px) {
 
+  .chaptertext{
+    font-weight: 800;
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+/*Breakpoint*/
+@media screen and (max-width:770px) {
+
+  .chaptertext{
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .chaptericon{
+    height: 65px;
+    width: 65px;
+  }
+  
+  p {
+
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  p.description {
+    font-size: 14px;
+  }
+
+
+/*Breakpoint*/
+@media screen and (max-width:570px) {
+
+  .chaptertext{
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .chaptericon{
+    height: 65px;
+    width: 65px;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  p.description {
+    font-size: 12px;
+  }
+
+  .grid-item1{
+    padding: 30px;
+  }
+  .grid-item2{
+    padding: 30px;
+  }
+  .grid-item3{
+    padding: 30px;
+  }
+  .grid-item4{
+    padding: 30px;
+  }
+  .grid-item5{
+    padding: 30px;
+  }
+  .grid-item6{
+    padding:30px;
+  }
+  .grid-item7{
+    padding: 30px;
+  }
+  .grid-item8{
+    padding: 30px;
+  }
+
+/*Mobile screen*/
+  @media screen and (max-width:400px) {
+
+    .chaptertext{
+      font-weight: 700;
+      font-size: 18px;
+    }
+  
+    .chaptericon{
+      height: 40px;
+      width: 40px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    p.description {
+      font-size: 14px;
+    }
+
+    .grid-item1{
+      padding: 20px;
+    }
+    .grid-item2{
+      padding: 20px;
+    }
+    .grid-item3{
+      padding: 20px;
+    }
+    .grid-item4{
+      padding: 20px;
+    }
+    .grid-item5{
+      padding: 20px;
+    }
+    .grid-item6{
+      padding:20px;
+    }
+    .grid-item7{
+      padding: 20px;
+    }
+    .grid-item8{
+      padding: 20px;
+    }
