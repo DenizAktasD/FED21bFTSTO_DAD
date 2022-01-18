@@ -9,34 +9,37 @@
 
 header,
 footer,
-body{background-color: #013B5C;}
+body{
+  background-color: #013B5C;
+  margin: 0px;
+}
   
 header {
   display: flex;
-  float: left;
   width: 100%;
-  height: 110px;
-  padding: px;
+  height: 100px;
   position: sticky;
   top: 0;
-  align-items: stretch;
   z-index: 1;
   }
 
-#logo{
-  margin: 10px;
+#topnavlogo{
+  display: flex;
+  height: 60px;
+  margin: 20px;
   position: relative;
-  float: left;
 }
 
 #menuarea{
-  margin: 20px;
+  margin: 26px;
+  width: auto;
   position: absolute;
   right: 30px;
 }
-
+*
 .menu {
   display: flex;
+
   flex-wrap: nowrap;
   list-style-type: none;
   margin: 0;
@@ -45,10 +48,8 @@ header {
   background-color: none;
   }
 
-  
 li a {
-  display: flex;
-  flex-wrap: nowrap;
+  display: inline-flex;
   float: left;
   color: white;
   font-family: Roboto;
@@ -62,8 +63,9 @@ li a {
   }
   
 li a:hover {
-  color: #FFECCD;
+  color: #6AD3E3;
   }
+  
 
 
 
@@ -72,8 +74,6 @@ li a:hover {
   grid-template-columns: 25% 75%;
   padding: 1px;
 }
-
-
 
 .grid-item1{
   display: flex;
@@ -111,6 +111,7 @@ li a:hover {
   align-content:flex-start;
   background-color: #f4f9f7;
   height: auto;
+  width: 100%;
   padding: 50px;
   column-fill: auto;
 }
@@ -160,17 +161,54 @@ li a:hover {
   gap: 20px;
 }
 
+.offerarea{
+  display: flex;
+  /*flex-flow: nowrap;*/
+  flex-direction: row;
+  /*justify-content: space-evenly;*/
+  width: 100%;
+  padding: 1px;
+  gap: 20px;
+}
+
+.offercontainer{
+  flex: 1 1 auto;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.offertext{
+  display: flex;
+  flex-direction: column;
+ /* align-items: stretch;*/
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#offerimg {
+  display: block;
+  margin: 0 auto 5px auto;
+ /* align-self: flex-end;*/
+  
+}
+
 .contactpart1{
   flex: 1 1 40%;
   size: 100%;
   padding: 15px;
-
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.3px);
-  -webkit-backdrop-filter: blur(1.3px);
-  border: 1px solid rgba(255, 255, 255, 0.19);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contactpart2{
@@ -181,7 +219,7 @@ li a:hover {
 
 .contactinfo{
   float: left;
-  color: white;
+  color: #484b4e;
   font-family: Roboto;
   font-weight: 300;
   font-size: 16px;
@@ -212,11 +250,10 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
   gap: 15px;
   width: 100%;
   height: 50px;
-  padding: 15px;
+  padding: 10px;
   position: sticky;
   bottom: 0;
   z-index: 1;
@@ -226,12 +263,10 @@ footer {
   display: flex;
   width: auto;
   gap: 15px;
-
   }
 
 .footertext{
   display: flex;
-  
   color: white;
   font-family: Roboto;
   letter-spacing: 0.05em;
@@ -290,13 +325,14 @@ p.description {
 }
 
 .group label {
-  font-size: 20px;
-  color: rgb(0, 0, 0);
+  font-size: 18px;
+  color: #484b4e;
   font-family: Roboto;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
 }
+
 
 input[type=text], select {
   width: 100%;
@@ -311,8 +347,8 @@ input[type=text], select {
   
 input[type=submit] {
   width: 100%;
-  background-color: #faf7f3;
-  color: rgb(12, 11, 11);
+  background-color:#a3b9c3;
+  color: #484b4e;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -320,15 +356,26 @@ input[type=submit] {
   cursor: pointer;
   font-weight: bold;
 }
-  
+
+/*hover submit-button*/
 input[type=submit]:hover {
-  background-color: #62A8B2;
+  background-color: #FB5357;
 }
 
 
 
 /*Breakpoint*/
-@media screen and (max-width:880px) {
+@media screen and (max-width:950px) {
+
+  .offercontainer{
+    flex: 1 1 0px;
+    size: auto;
+    padding: 15px;
+
+  }
+
+
+
 
   .chaptertext{
     font-weight: 800;
