@@ -339,6 +339,7 @@ input[type=submit]:hover {
     font-size: 18px;
     font-weight: 500;
   }
+}
 
 /*Breakpoint*/
 @media screen and (max-width:770px) {
@@ -367,6 +368,7 @@ input[type=submit]:hover {
   p.description {
     font-size: 14px;
   }
+}
 
 
 /*Breakpoint*/
@@ -420,6 +422,7 @@ input[type=submit]:hover {
   .grid-item8{
     padding: 30px;
   }
+}
 
 /*Mobile screen*/
   @media screen and (max-width:400px) {
@@ -473,3 +476,4 @@ input[type=submit]:hover {
     .grid-item8{
       padding: 20px;
     }
+  }
