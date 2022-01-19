@@ -39,7 +39,6 @@ header {
 *
 .menu {
   display: flex;
-
   flex-wrap: nowrap;
   list-style-type: none;
   margin: 0;
@@ -173,16 +172,15 @@ li a:hover {
 
 .offercontainer{
   flex: 1 1 auto;
-  /*align-items: center;*/
-  /*justify-content: center;*/
+  align-items: center;
+  justify-content: space-between;
   padding: 15px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.2px);
+  backdrop-filter: blur(1.2px);  
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 
 .offertext{
   display: flex;
@@ -197,7 +195,7 @@ li a:hover {
   display: block;
   margin: 0 auto 5px auto;
  /* align-self: flex-end;*/
-  
+ /*justify-self: flex-end;*/
 }
 
 .contactpart1{
