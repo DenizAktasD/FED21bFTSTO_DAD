@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
+
 </head>
 <body>
 
@@ -35,6 +36,16 @@
             </ul>
         </section>
 
+        <div class="dropdown">
+            <button class="dropdownbutton">MENU</button>
+            <div class="dropdown-content">
+                <a href="#home">WHO WE ARE</a>
+                <a href="#about">WHAT WE OFFER</a>
+                <a href="#portfolio">WHAT WE HAVE DONE</a>
+                <a href="#contact">HOW TO REACH US</a>
+            </div>
+          </div>
+
     </header>
 
   <main>
@@ -42,9 +53,9 @@
    
     <div class="grid-container">
 
-        <div class="grid-item1">
+        <div class="grid-item1" id="home">
             <section class="chaptericon">
-                <img id="home" src="img/Who.png" />
+                <img src="img/Who.png" />
             </section>
 
             <section class="chaptertext">
@@ -70,9 +81,9 @@
             </p> 
         </div>
 
-        <div class="grid-item3">
+        <div class="grid-item3" id="about">
             <section class="chaptericon">
-                <img id="about" src="img/paperplane.png" />
+                <img src="img/paperplane.png" />
             </section>
 
             <section class="chaptertext">
@@ -169,9 +180,9 @@
             </div>
 
         </div>
-        <div class="grid-item5">
+        <div class="grid-item5" id="portfolio">
             <section class="chaptericon">
-                <img id="portfolio" src="img/Portfolio.png" />
+                <img src="img/Portfolio.png" />
             </section>
 
             <section class="chaptertext">
@@ -195,95 +206,100 @@
                 Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
             </p> 
 
-            <div class="portfolio">
+            
 
-                <section class="businesscard">
-                    <h4>
-                        Kund exempel 1
-                    </h4>
-                    <img src="img/Front.png" />
-                    <p class="description">
-                        Text that descibes the exemple
-                    </p>
-                </section>
-                <section class="businesscard">
-                    <h4>
-                        Kund exempel 2
-                    </h4>
-                    <img src="img/Front.png" />
-                    <p class="description">
-                        Text that descibes the exemple
-                    </p>
-                </section>
-                <section class="businesscard">
-                    <h4>
-                        Kund exempel 3
-                    </h4>
-                    <img src="img/Front.png" />
-                    <p class="description">
-                        Text that descibes the exemple
-                    </p>
-                </section>
-                <section class="businesscard">
-                    <h4>
-                        Kund exempel 4
-                    </h4>
-                    <img src="img/Front.png" />
-                    <p class="description">
-                        Text that descibes the exemple
-                    </p>
-                </section>
-                <section class="businesscard">
-                    <h4>
-                        Kund exempel 5
-                    </h4>
-                    <img src="img/Front.png" />
-                    <p class="description">
-                        Text that descibes the exemple
-                    </p>
-                </section>
-                <section class="businesscard">
-                    <h4>
-                        Kund exempel 6
-                    </h4>
-                    <img src="img/Front.png" />
-                    <p class="description">
-                        Text that descibes the exemple
-                    </p>
-                </section>
-                <section class="businesscard">
-                    <h4>
-                        Kund exempel 7
-                    </h4>
-                    <img src="img/Front.png" />
-                    <p class="description">
-                        Text that descibes the exemple
-                    </p>
-                </section>
-                <section class="businesscard">
-                    <h4>
-                        Kund exempel 8
-                    </h4>
-                    <img src="img/Front.png" />
-                    <p class="description">
-                        Text that descibes the exemple
-                    </p>
-                </section>
-                <section class="businesscard">
-                    <h4>
-                        Kund exempel 9
-                    </h4>
-                    <img src="img/Front.png" />
-                    <p class="description">
-                        Text that descibes the exemple
-                    </p>
-                </section>
 
-            </div>
-        </div>  
-        <div class="grid-item7">
-            <section class="chaptericon">
-                <img id="contact" src="img/Contact.png" />
+
+    <div class="portfolio">
+
+ <div class="portfolioslide">
+
+        <img src="img/Customer3.png" style="width:100%">
+        </div>
+
+    <div class="portfolioslide">
+
+            <img src="img/Customer2.png" style="width:100%">
+        </div>
+
+    <div class="portfolioslide">
+
+            <img src="img/Customer5.png" style="width:100%">
+        </div>
+
+    <div class="portfolioslide">
+
+            <img src="img/Customer1.png" style="width:100%">
+        </div>
+
+  <div class="portfolioslide">
+
+        <img src="img/Customer4.png" style="width:100%">
+    </div>
+
+
+  <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+  <div class="row">
+    <div class="portfoliocolumn">
+      <img class="cursor" src="img/Front3.png" style="width:100%" onclick="currentSlide(1)" alt="Customer 1 businesscards">
+    </div>
+    <div class="portfoliocolumn">
+      <img class="cursor" src="img/Front2.png" style="width:100%" onclick="currentSlide(2)" alt="Customer 2 businesscards">
+    </div>
+    <div class="portfoliocolumn">
+      <img class="cursor" src="img/Front5.png" style="width:100%" onclick="currentSlide(3)" alt="Customer 3 businesscards">
+    </div>
+    <div class="portfoliocolumn">
+      <img class="cursor" src="img/Front1.png" style="width:100%" onclick="currentSlide(4)" alt="Customer 4 businesscards">
+    </div>
+    <div class="portfoliocolumn">
+      <img class="cursor" src="img/Front4.png" style="width:100%" onclick="currentSlide(5)" alt="Customer 5 businesscards">
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("portfolioslide");
+        var dots = document.getElementsByClassName("thumbs");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+
+</script>
+
+        
+        <div class="grid-item7" id="contact">
+            <section class="chaptericon" >
+                <img src="img/Contact.png" />
             </section>
 
             <section class="chaptertext">
@@ -358,11 +374,11 @@
 
 
         </div>
-    </div>
+    
     </div>    
         </div>
 
-    </div>
+
 
 </main>
 

@@ -13,7 +13,8 @@ body{
   background-color: #013B5C;
   margin: 0px;
 }
-  
+
+/*The header-banner*/
 header {
   display: flex;
   width: 100%;
@@ -23,6 +24,7 @@ header {
   z-index: 1;
   }
 
+  /*The logo in the header*/
 #topnavlogo{
   display: flex;
   height: 60px;
@@ -30,13 +32,20 @@ header {
   position: relative;
 }
 
+/*Hide the drop down menu down to 950px*/
+.dropdown{
+  visibility: hidden;
+}
+
+/*The area where the menu is placed*/
 #menuarea{
   margin: 26px;
   width: auto;
   position: absolute;
-  right: 30px;
+  right: 0;
 }
-*
+
+/*The area for the list*/
 .menu {
   display: flex;
   flex-wrap: nowrap;
@@ -44,9 +53,10 @@ header {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: none;
+
   }
 
+/*The navigation menu in text*/
 li a {
   display: inline-flex;
   float: left;
@@ -60,27 +70,84 @@ li a {
   margin-left: 10px;
   text-decoration: none;
   }
-  
+
+/*Color change when hovered*/
 li a:hover {
   color: #6AD3E3;
   }
-  
+
+/*Color when selected*/
+li a:active {
+  color: #6AD3E3;
+  }
+
+/*Alternative drop down menu for 950px and smaller*/
+.dropdown {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  display: inline-block;
+}
+
+.dropdownbutton {
+  background-color: #6AD3E3;
+  color: white;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 16px;
+  font-family: Roboto;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  border-radius: 2px;
+  font-family: Roboto;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #013B5C;
+  min-width: 220px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #6AD3E3}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 
+/*The grid for the main page layout*/
 .grid-container {
   display: grid;
   grid-template-columns: 25% 75%;
   padding: 1px;
 }
 
+/*The grid parts in order from 1 to 8*/
 .grid-item1{
   display: flex;
   flex-wrap: wrap;
   align-content:flex-start;
   background-color: #c7e0e4;
   height: auto;
-  padding: 50px;
+  padding: 100px 50px 50px 70px;
   font-size: 40px;
   font-weight: 900;
   column-fill: auto;
@@ -91,7 +158,8 @@ li a:hover {
   align-content:flex-start;
   background-color: #e0eef0;
   height: auto;
-  padding: 50px;
+  padding: 100px 50px 50px 70px;
+
   column-fill: auto;
 }
 .grid-item3{
@@ -100,7 +168,7 @@ li a:hover {
   align-content:flex-start;
   background-color: #e7f1ee;
   height: auto;
-  padding: 50px;
+  padding: 100px 50px 50px 70px;
   font-size: 30px;
   column-fill: auto;
 }
@@ -111,7 +179,7 @@ li a:hover {
   background-color: #f4f9f7;
   height: auto;
   width: 100%;
-  padding: 50px;
+  padding: 100px 50px 50px 70px;
   column-fill: auto;
 }
 .grid-item5{
@@ -120,7 +188,7 @@ li a:hover {
   align-content:flex-start;
   background-color: #cccccc;
   height: auto;
-  padding: 50px;
+  padding: 100px 50px 50px 70px;
   font-size: 30px;
   column-fill: auto;
 }
@@ -131,22 +199,20 @@ li a:hover {
   background-color: #ffffff;
   height: auto;
   width: 100%;
-  padding: 50px;
+  padding: 100px 50px 50px 70px;
   margin-right: 50px;
   column-fill: auto;
 }
-
 .grid-item7{
   display: flex;
   flex-wrap: wrap;
   align-content:flex-start;
   background-color: #a3b9c3;
   height: auto;
-  padding: 50px;
+  padding: 100px 50px 50px 70px;
   font-size: 30px;
   column-fill: auto;
 }
-
 .grid-item8{
   display: flex;
   flex-wrap: wrap;
@@ -154,12 +220,13 @@ li a:hover {
   background-color: #ccd8de;
   height: auto;
   width: 100%;
-  padding: 50px;
+  padding: 100px 50px 50px 70px;
   margin-right: 50px;
   column-fill: auto;
   gap: 20px;
 }
 
+/*The area with the three offers*/
 .offerarea{
   display: flex;
   /*flex-flow: nowrap;*/
@@ -170,6 +237,7 @@ li a:hover {
   gap: 20px;
 }
 
+/*The containers for the offers*/
 .offercontainer{
   flex: 1 1 auto;
   align-items: center;
@@ -182,6 +250,7 @@ li a:hover {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/*Styling of the text*/
 .offertext{
   display: flex;
   flex-direction: column;
@@ -191,6 +260,7 @@ li a:hover {
   text-align: center;
 }
 
+/*The images for the offers*/
 #offerimg {
   display: block;
   margin: 0 auto 5px auto;
@@ -198,6 +268,7 @@ li a:hover {
  /*justify-self: flex-end;*/
 }
 
+/*The area for the contactform*/
 .contactpart1{
   flex: 1 1 40%;
   size: 100%;
@@ -209,12 +280,14 @@ li a:hover {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/*The area for the contact info*/
 .contactpart2{
   flex: 1 1 40%;
   size: 100%;
   padding: 10px;
 }
 
+/*The contact text*/
 .contactinfo{
   float: left;
   color: #484b4e;
@@ -225,6 +298,7 @@ li a:hover {
   line-height: 20pt;
 }
 
+/*The icons for the different chapters*/
 .chaptericon{
   display: flex;
   position: relative;
@@ -235,6 +309,7 @@ li a:hover {
   margin-bottom: 30px;
 }
 
+/*The header text for the chapters*/
 .chaptertext{
   float: left;
   color: #484b4e;
@@ -243,26 +318,21 @@ li a:hover {
   font-size: 50px;
   text-align: left;
 }
-  
+
+/*The footer banner*/
 footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 15px;
   width: 100%;
-  height: 50px;
+  height: 55px;
   padding: 10px;
   position: sticky;
   bottom: 0;
   z-index: 1;
 }
 
-.socialmedia{
-  display: flex;
-  width: auto;
-  gap: 15px;
-  }
-
+  /*The info text in the footer*/
 .footertext{
   display: flex;
   color: white;
@@ -270,23 +340,63 @@ footer {
   letter-spacing: 0.05em;
   font-weight: 300;
   font-size: 12px;
-  text-align: center;
+
 }
 
-.portfolio {
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: row wrap;
-  gap: 40px;
-  align-content: space-evenly;
-  justify-content: center;
-  align-content: center;
+/*The social media icons*/
+.socialmedia{
+  display: flex;
+  width: auto;
+  gap: 15px;
+  padding-right: 26px;
+  padding-left: 30px;
+  }
+
+/*The area for the main card in the slidehow*/
+.portfolioslide{
+  display: none;
+  margin-bottom: 40px;
 }
 
-.businesscard {
-  flex: 1 1 30%;
-  size: 100%;
-}
+/*The main card in the slidehow*/
+  .portfolio {
+    position: relative;
+    margin: 30px;
+    vertical-align: middle;
+  }
+
+/*The area for the card slidehow*/
+  .portfoliocolumn {
+    float: left;
+    width: 20%;
+  }
+
+  /*The prev and next-slash*/
+  .previous,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 27%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(207, 24, 24);
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 5px 5px 0;
+  }
+
+/*Puts the next-slash to the right on the page*/
+  .next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  /*Cursor for the thumb gallery in the slidehow*/
+  .cursor {
+    cursor: pointer;
+  }
+
 
 h1 {
   color: #dbe7ec;
@@ -322,6 +432,7 @@ p.description {
   font-weight: 300;
 }
 
+/*The text above the info forms*/
 .group label {
   font-size: 18px;
   color: #484b4e;
@@ -331,7 +442,7 @@ p.description {
   font-size: 14px;
 }
 
-
+/*The info forms*/
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -343,6 +454,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
   
+/*The submit button*/
 input[type=submit] {
   width: 100%;
   background-color:#a3b9c3;
@@ -355,15 +467,25 @@ input[type=submit] {
   font-weight: bold;
 }
 
-/*hover submit-button*/
+/*Color when hovering the submit-button*/
 input[type=submit]:hover {
   background-color: #FB5357;
 }
 
 
 
-/*Breakpoint*/
+/*Breakpoint 1*/
 @media screen and (max-width:950px) {
+
+ /* The menu list disappears*/
+  #menuarea{
+    display: none;
+  }
+
+  /*Show the drop down menu*/
+  .dropdown{
+    visibility: visible;
+  }
 
   .offercontainer{
     flex: 1 1 0px;
@@ -371,9 +493,6 @@ input[type=submit]:hover {
     padding: 15px;
 
   }
-
-
-
 
   .chaptertext{
     font-weight: 800;
@@ -386,7 +505,7 @@ input[type=submit]:hover {
   }
 }
 
-/*Breakpoint*/
+/*Breakpoint 2*/
 @media screen and (max-width:770px) {
 
   .chaptertext{
@@ -416,7 +535,7 @@ input[type=submit]:hover {
 }
 
 
-/*Breakpoint*/
+/*Breakpoint 3*/
 @media screen and (max-width:570px) {
 
   .chaptertext{
