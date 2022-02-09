@@ -89,6 +89,7 @@ li a:active {
   display: inline-block;
 }
 
+/*The button*/
 .dropdownbutton {
   background-color: #6AD3E3;
   color: white;
@@ -103,6 +104,7 @@ li a:active {
   cursor: pointer;
 }
 
+/*The drop down content*/
 .dropdown-content {
   display: none;
   position: absolute;
@@ -112,26 +114,29 @@ li a:active {
   letter-spacing: 0.05em;
   font-weight: 500;
   font-size: 14px;
+  text-align: right;
   background-color: #013B5C;
   min-width: 220px;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
   z-index: 1;
 }
 
+/*Look of the textcontent*/
 .dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
   display: block;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
 }
 
-.dropdown-content a:hover {background-color: #6AD3E3}
+/*Hovering the content*/
+.dropdown-content a:hover {
+  background-color: #6AD3E3
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
 
 /*The grid for the main page layout*/
 .grid-container {
@@ -159,7 +164,6 @@ li a:active {
   background-color: #e0eef0;
   height: auto;
   padding: 100px 50px 50px 70px;
-
   column-fill: auto;
 }
 .grid-item3{
@@ -241,7 +245,7 @@ li a:active {
 .offercontainer{
   flex: 1 1 auto;
   align-items: center;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   padding: 15px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
@@ -250,11 +254,18 @@ li a:active {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/*The containers for the offertext*/
+.offertextcontainer{
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+}
+
 /*Styling of the text*/
 .offertext{
   display: flex;
   flex-direction: column;
- /* align-items: stretch;*/
+  align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   text-align: center;
