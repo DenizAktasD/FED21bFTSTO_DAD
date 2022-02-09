@@ -1,8 +1,6 @@
 
 /*Desktop first*/
 
-
-
 * {
     box-sizing: border-box;
   }
@@ -22,7 +20,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  }
+}
 
   /*The logo in the header*/
 #topnavlogo{
@@ -53,7 +51,6 @@ header {
   margin: 0;
   padding: 0;
   overflow: hidden;
-
   }
 
 /*The navigation menu in text*/
@@ -133,7 +130,6 @@ li a:active {
 .dropdown-content a:hover {
   background-color: #6AD3E3
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -245,7 +241,7 @@ li a:active {
 .offercontainer{
   flex: 1 1 auto;
   align-items: center;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   padding: 15px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
@@ -254,27 +250,29 @@ li a:active {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/*The containers for the offertext*/
-.offertextcontainer{
-  display: flex;
-  align-content: flex-start;
-  justify-content: center;
-}
-
-/*Styling of the text*/
+/*Styling of the textarea*/
 .offertext{
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   margin-bottom: 20px;
   text-align: center;
 }
 
+/*Area for the offerimages*/
+.offerimgarea{
+  display: flex;
+  padding: 5px;
+  margin: 0 auto 5px auto;
+  align-items: center;
+  justify-content: center;
+}
+
 /*The images for the offers*/
 #offerimg {
   display: block;
-  margin: 0 auto 5px auto;
  /* align-self: flex-end;*/
  /*justify-self: flex-end;*/
 }
@@ -343,7 +341,7 @@ footer {
   z-index: 1;
 }
 
-  /*The info text in the footer*/
+/*The info text in the footer*/
 .footertext{
   display: flex;
   color: white;
@@ -351,7 +349,6 @@ footer {
   letter-spacing: 0.05em;
   font-weight: 300;
   font-size: 12px;
-
 }
 
 /*The social media icons*/
@@ -361,7 +358,7 @@ footer {
   gap: 15px;
   padding-right: 26px;
   padding-left: 30px;
-  }
+}
 
 /*The area for the main card in the slidehow*/
 .portfolioslide{
@@ -370,43 +367,43 @@ footer {
 }
 
 /*The main card in the slidehow*/
-  .portfolio {
-    position: relative;
-    margin: 30px;
-    vertical-align: middle;
-  }
+.portfolio {
+  position: relative;
+  margin: 30px;
+  vertical-align: middle;
+}
 
 /*The area for the card slidehow*/
-  .portfoliocolumn {
-    float: left;
-    width: 20%;
-  }
+.portfoliocolumn {
+  float: left;
+  width: 20%;
+}
 
-  /*The prev and next-slash*/
-  .previous,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 27%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: rgb(207, 24, 24);
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 0 5px 5px 0;
-  }
+/*The prev and next-slash*/
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 27%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(207, 24, 24);
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 5px 5px 0;
+}
 
 /*Puts the next-slash to the right on the page*/
-  .next {
-    right: 0;
-    border-radius: 5px 0 0 5px;
-  }
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
 
-  /*Cursor for the thumb gallery in the slidehow*/
-  .cursor {
-    cursor: pointer;
-  }
+/*Cursor for the thumb gallery in the slidehow*/
+.cursor {
+  cursor: pointer;
+}
 
 
 h1 {
@@ -484,11 +481,10 @@ input[type=submit]:hover {
 }
 
 
-
 /*Breakpoint 1*/
 @media screen and (max-width:950px) {
 
- /* The menu list disappears*/
+  /* The menu list disappears*/
   #menuarea{
     display: none;
   }
@@ -502,7 +498,6 @@ input[type=submit]:hover {
     flex: 1 1 0px;
     size: auto;
     padding: 15px;
-
   }
 
   .chaptertext{
@@ -573,82 +568,55 @@ input[type=submit]:hover {
     font-size: 12px;
   }
 
-  .grid-item1{
-    padding: 30px;
-  }
-  .grid-item2{
-    padding: 30px;
-  }
-  .grid-item3{
-    padding: 30px;
-  }
-  .grid-item4{
-    padding: 30px;
-  }
-  .grid-item5{
-    padding: 30px;
-  }
-  .grid-item6{
-    padding:30px;
-  }
-  .grid-item7{
-    padding: 30px;
-  }
+  .grid-item1,
+  .grid-item2,
+  .grid-item3,
+  .grid-item4,
+  .grid-item5,
+  .grid-item6,
+  .grid-item7,
   .grid-item8{
     padding: 30px;
   }
+ 
 }
 
 /*Mobile screen*/
-  @media screen and (max-width:400px) {
+@media screen and (max-width:400px) {
 
-    .chaptertext{
-      font-weight: 700;
-      font-size: 18px;
-    }
-  
-    .chaptericon{
-      height: 40px;
-      width: 40px;
-      margin-bottom: 20px;
-    }
-    
-    p {
-      font-size: 14px;
-      font-weight: 500;
-    }
-  
-    h4 {
-      font-size: 20px;
-      font-weight: 700;
-    }
-
-    p.description {
-      font-size: 14px;
-    }
-
-    .grid-item1{
-      padding: 20px;
-    }
-    .grid-item2{
-      padding: 20px;
-    }
-    .grid-item3{
-      padding: 20px;
-    }
-    .grid-item4{
-      padding: 20px;
-    }
-    .grid-item5{
-      padding: 20px;
-    }
-    .grid-item6{
-      padding:20px;
-    }
-    .grid-item7{
-      padding: 20px;
-    }
-    .grid-item8{
-      padding: 20px;
-    }
+  .chaptertext{
+    font-weight: 700;
+    font-size: 18px;
   }
+
+  .chaptericon{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  p.description {
+    font-size: 14px;
+  }
+
+  .grid-item1,
+  .grid-item2,
+  .grid-item3,
+  .grid-item4,
+  .grid-item5,
+  .grid-item6,
+  .grid-item7,
+  .grid-item8{
+    padding: 20px;
+  }
+}
