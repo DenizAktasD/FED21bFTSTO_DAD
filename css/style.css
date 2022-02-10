@@ -73,11 +73,6 @@ li a:hover {
   color: #6AD3E3;
   }
 
-/*Color when selected*/
-li a:active {
-  color: #6AD3E3;
-  }
-
 /*Alternative drop down menu for 950px and smaller*/
 .dropdown {
   position: fixed;
@@ -86,9 +81,9 @@ li a:active {
   display: inline-block;
 }
 
-/*The button*/
+/*The drop down menu-button*/
 .dropdownbutton {
-  background-color: #6AD3E3;
+  background-color: #62A8B2;
   color: white;
   border-radius: 2px;
   padding: 20px;
@@ -128,7 +123,7 @@ li a:active {
 
 /*Hovering the content*/
 .dropdown-content a:hover {
-  background-color: #6AD3E3
+  background-color: #62A8B2;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -542,7 +537,7 @@ input[type=submit]:hover {
 
 
 /*Breakpoint 3*/
-@media screen and (max-width:570px) {
+@media screen and (max-width:670px) {
 
   .chaptertext{
     font-weight: 700;
@@ -552,6 +547,14 @@ input[type=submit]:hover {
   .chaptericon{
     height: 65px;
     width: 65px;
+  }
+
+  .offerarea{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 1px;
+    gap: 20px;
   }
   
   p {
@@ -583,6 +586,36 @@ input[type=submit]:hover {
 
 /*Mobile screen*/
 @media screen and (max-width:400px) {
+
+  header {
+    height: 70px;
+  }
+
+  #topnavlogo{
+    height: 40px;
+    margin: 15px;
+  }
+
+  .dropdown {
+    right: 14px;
+    top: 14px;
+  }
+  
+  .dropdownbutton {
+    padding: 15px;
+    font-size: 12px;
+  }
+  
+  /*The drop down content*/
+  .dropdown-content {
+    font-size: 12px;
+    min-width: 170px;
+  }
+  
+  /*Look of the textcontent*/
+  .dropdown-content a {
+    padding: 15px 15px;
+  }
 
   .chaptertext{
     font-weight: 700;
@@ -617,6 +650,12 @@ input[type=submit]:hover {
   .grid-item6,
   .grid-item7,
   .grid-item8{
-    padding: 20px;
+    padding: 73px 20px 20px 20px;
   }
+
+  .socialmedia{
+    padding-right: 15px;
+    padding-left: 25px;
+  }
+
 }
