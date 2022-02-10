@@ -221,6 +221,27 @@ li a:hover {
   gap: 20px;
 }
 
+/*The icons for the different chapters*/
+.chaptericon{
+  display: flex;
+  position: relative;
+  float: left;
+  height: 100px;
+  width: 100px;
+  justify-content: start;
+  margin-bottom: 30px;
+}
+
+/*The header text for the chapters*/
+.chaptertext{
+  float: left;
+  color: #484b4e;
+  font-family: Lora;
+  font-weight: 900;
+  font-size: 50px;
+  text-align: left;
+}
+
 /*The area with the three offers*/
 .offerarea{
   display: flex;
@@ -272,88 +293,6 @@ li a:hover {
  /*justify-self: flex-end;*/
 }
 
-/*The area for the contactform*/
-.contactpart1{
-  flex: 1 1 40%;
-  size: 100%;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.2px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/*The area for the contact info*/
-.contactpart2{
-  flex: 1 1 40%;
-  size: 100%;
-  padding: 10px;
-}
-
-/*The contact text*/
-.contactinfo{
-  float: left;
-  color: #484b4e;
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 16px;
-  text-align: left;
-  line-height: 20pt;
-}
-
-/*The icons for the different chapters*/
-.chaptericon{
-  display: flex;
-  position: relative;
-  float: left;
-  height: 100px;
-  width: 100px;
-  justify-content: start;
-  margin-bottom: 30px;
-}
-
-/*The header text for the chapters*/
-.chaptertext{
-  float: left;
-  color: #484b4e;
-  font-family: Lora;
-  font-weight: 900;
-  font-size: 50px;
-  text-align: left;
-}
-
-/*The footer banner*/
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 100%;
-  height: 55px;
-  padding: 10px;
-  position: sticky;
-  bottom: 0;
-  z-index: 1;
-}
-
-/*The info text in the footer*/
-.footertext{
-  display: flex;
-  color: white;
-  font-family: Roboto;
-  letter-spacing: 0.05em;
-  font-weight: 300;
-  font-size: 12px;
-}
-
-/*The social media icons*/
-.socialmedia{
-  display: flex;
-  width: auto;
-  gap: 15px;
-  padding-right: 26px;
-  padding-left: 30px;
-}
 
 /*The area for the main card in the slidehow*/
 .portfolioslide{
@@ -400,6 +339,67 @@ footer {
   cursor: pointer;
 }
 
+/*The area for the contactform*/
+.contactpart1{
+  flex: 1 1 40%;
+  size: 100%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/*The area for the contact info*/
+.contactpart2{
+  flex: 1 1 40%;
+  size: 100%;
+  padding: 10px;
+}
+
+/*The contact text*/
+.contactinfo{
+  float: left;
+  color: #484b4e;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: left;
+  line-height: 20pt;
+}
+
+/*The footer banner*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 55px;
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*The info text in the footer*/
+.footertext{
+  display: flex;
+  color: white;
+  font-family: Roboto;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/*The social media icons*/
+.socialmedia{
+  display: flex;
+  width: auto;
+  gap: 15px;
+  padding-right: 26px;
+  padding-left: 30px;
+}
 
 h1 {
   color: #dbe7ec;
@@ -535,7 +535,6 @@ input[type=submit]:hover {
   }
 }
 
-
 /*Breakpoint 3*/
 @media screen and (max-width:670px) {
 
@@ -606,13 +605,11 @@ input[type=submit]:hover {
     font-size: 12px;
   }
   
-  /*The drop down content*/
   .dropdown-content {
     font-size: 12px;
     min-width: 170px;
   }
   
-  /*Look of the textcontent*/
   .dropdown-content a {
     padding: 15px 15px;
   }
@@ -653,6 +650,22 @@ input[type=submit]:hover {
     padding: 73px 20px 20px 20px;
   }
 
+  .portfolioslide{
+    margin-bottom: 30px;
+  }
+  
+  .portfolio {
+    margin: 10px;
+  }
+ 
+  /*The prev and next-slash*/
+  .previous,
+  .next {
+    top: 50%;
+    padding: 2px;
+    font-size: 20px;
+  }
+  
   .socialmedia{
     padding-right: 15px;
     padding-left: 25px;
